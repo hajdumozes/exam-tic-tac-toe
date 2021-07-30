@@ -52,13 +52,13 @@ case 4: diagonal win, have a winner
 
 scenario player won with vertical line
 
-case 1: 1|1 & 1|2 & 1|3 is occupied by the same player
+✅ case 1: 1|1 & 1|2 & 1|3 is occupied by the same player
 
-case 2: 2|1 & 2|2 & 2|3 is occupied by the same player
+✅ case 2: 2|1 & 2|2 & 2|3 is occupied by the same player
 
-case 3: 3|1 & 3|2 & 3|3 is occupied by the same player
+✅ case 3: 3|1 & 3|2 & 3|3 is occupied by the same player
 
-case 4: any other, no win with vertical
+✅ case 4: any other, no win with vertical
 
 -> game over, have a winner
 
