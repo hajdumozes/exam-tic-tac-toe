@@ -12,7 +12,8 @@ public class GameOverDecider {
 
     public boolean isItHorizontalWin(List<Cell> cells) {
         List<Cell> firstLine = List.of(new Cell(0, 0), new Cell(0, 1), new Cell(0, 2));
-        if (cells.containsAll(firstLine)) {
+        List<Cell> secondLine = List.of(new Cell(1, 0), new Cell(1, 1), new Cell(1, 2));
+        if (cells.containsAll(firstLine) ||cells.containsAll(secondLine)) {
             return true;
         }
         return false;
