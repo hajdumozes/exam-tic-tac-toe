@@ -28,7 +28,7 @@ scenario: player picks a move
 
 scenario: player rounds
 
-case 1: starting player should be X
+✅ case 1: starting player should be X
 
 case 2: upon player picks a space, the rounds should be given to the other player
 
