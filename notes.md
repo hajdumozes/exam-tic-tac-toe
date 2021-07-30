@@ -20,9 +20,9 @@ scenario: board gives empty spaces
 
 scenario: player picks a move
 
-case 1: player picks the only cell, if the input is only one cell
+✅ case 1: player picks the only cell, if the input is only one cell
 
-case 2: player pick a cell from input cells
+✅ case 2: player picks a cell from input cells
 
 ### Game manager
 

@@ -28,4 +28,18 @@ class PlayerTest {
         // then
         assertThat(output).isEqualTo(cell);
     }
+
+    @Test
+    void givenMultipleCellArePresent_pickCell_shouldReturnOneOfThem() {
+        // given
+        Cell cell = new Cell(0, 0);
+        Cell otherCell = new Cell(1, 1);
+        List<Cell> input = List.of(cell, otherCell);
+
+        // when
+        Cell output = player.pickCell(input);
+
+        // then
+        assertThat(input.contains(output)).isTrue();
+    }
 }
