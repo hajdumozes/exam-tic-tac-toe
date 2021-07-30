@@ -25,8 +25,8 @@ public class GameOverDecider {
     }
 
     public boolean isItDiagonalWin(List<Cell> cells) {
-        List<Cell> firstColumn = List.of(new Cell(0, 0), new Cell(1, 0), new Cell(2, 0));
+        List<Cell> leftToRight = List.of(new Cell(0, 0), new Cell(1, 1), new Cell(2, 2));
         List<Cell> secondColumn = List.of(new Cell(0, 1), new Cell(1, 1), new Cell(2, 1));
-        return cells.containsAll(firstColumn) || cells.containsAll(secondColumn);
+        return cells.containsAll(leftToRight) || cells.containsAll(secondColumn);
     }
 }
