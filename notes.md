@@ -24,7 +24,7 @@ scenario: player picks a move
 
 ✅ case 2: player picks a cell from input cells
 
-case 3: picked cell should by occupied by player
+case 3: picked cell should be occupied by player
 
 ### Game manager
 
@@ -40,13 +40,14 @@ case 4: round switch should print the board after 2 second
 
 case 5: if game is over, there shouldn't be a round switch
 
-scenario: board state should trigger game over case 1: non of them are present, no game over
+case 6: play round should trigger all game over decider checks with current player cells (except for draw, which is
+empty cells)
 
-case 2: horizontal win, have a winner
+scenario: board state should trigger game over
 
-case 3: vertical win, have a winner
+case 1: none of them are present, no game over, new round
 
-case 4: diagonal win, have a winner
+case 2: game over winner or draw should be printed
 
 ### Game over
 
@@ -74,7 +75,7 @@ scenario player won with horizontal line case 1:
 
 -> game over, have a winner
 
-scenario player won with diagonal line 
+scenario player won with diagonal line
 
 ✅ case 1: 1|1 & 2|2 & 3|3 is occupied by the same player
 
@@ -109,3 +110,8 @@ pomodoro 3:
     - ✅ vertical
     - ✅ diagonal
     - ✅ draw
+
+pomodoro 4:
+
+- update notes for future pomodoros
+- update techdebt
