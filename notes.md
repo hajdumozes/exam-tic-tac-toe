@@ -24,6 +24,8 @@ scenario: player picks a move
 
 ✅ case 2: player picks a cell from input cells
 
+case 3: picked cell should by occupied by player
+
 ### Game manager
 
 scenario: player rounds
@@ -32,7 +34,7 @@ scenario: player rounds
 
 ✅ case 2: play rounds should switch player
 
-case 3: upon player picks a space, the rounds should be given to the other player
+case 3: play round should invoke player's pick a cell effect
 
 case 4: round switch should print the board after 2 second
 
@@ -76,7 +78,11 @@ case 2: 1|3 & 2|2 & 3|1 is occupied by the same player
 
 case 4: any other, no win with diagonal -> game over, have a winner
 
-scenario: draw case 1: no empty space -> game over, no winner
+scenario: draw 
+
+case 1: there are empty spaces -> false
+
+case 1: no empty space -> true
 
 pomodoro 1:
 
