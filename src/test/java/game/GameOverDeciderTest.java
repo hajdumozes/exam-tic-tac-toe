@@ -99,4 +99,16 @@ class GameOverDeciderTest {
         // then
         assertThat(output).isTrue();
     }
+
+    @Test
+    void givenSecondColumn_isItVerticalWin_shouldReturnTrue() {
+        // given
+        List<Cell> input = List.of(new Cell(0, 1), new Cell(1, 1), new Cell(2, 1));
+
+        // when
+        boolean output = decider.isItVerticalWin(input);
+
+        // then
+        assertThat(output).isTrue();
+    }
 }
