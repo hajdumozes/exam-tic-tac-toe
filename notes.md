@@ -84,8 +84,8 @@ pomodoro 1:
 
 pomodoro 2:
 
-- board gives back empty spaces
-- player can pick a space on board from empty ones
-- game manager creates board
+- ✅ board gives back empty spaces
+- ✅ player can pick a space on board from empty ones
+- ✅ game manager creates board
 - game maganer decides rounds
 - game should lasts until there is game over
