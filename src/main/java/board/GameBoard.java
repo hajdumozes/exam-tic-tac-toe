@@ -5,10 +5,10 @@ import lombok.Data;
 import java.util.List;
 
 @Data
-public class Board {
+public class GameBoard {
     List<Cell> cells;
 
-    public Board() {
+    public GameBoard() {
         this.cells = List.of(
             new Cell(0, 0),
             new Cell(0, 1),

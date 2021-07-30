@@ -8,20 +8,20 @@ import java.io.PrintStream;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
-class BoardTest {
+class GameBoardTest {
     private final ByteArrayOutputStream outputStreamCaptor = new ByteArrayOutputStream();
-    Board board;
+    GameBoard gameBoard;
 
     @BeforeEach
     void init() {
-        board = new Board();
+        gameBoard = new GameBoard();
         System.setOut(new PrintStream(outputStreamCaptor));
     }
 
     @Test
     void print_shouldPrintBoardState() {
         // when
-        board.print();
+        gameBoard.print();
 
         // then
         assertThat(" | |\n" +
