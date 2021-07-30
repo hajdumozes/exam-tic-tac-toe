@@ -80,7 +80,7 @@ case 4: any other, no win with diagonal -> game over, have a winner
 
 scenario: draw 
 
-case 1: there are empty spaces -> false
+✅ case 1: there are empty spaces -> false
 
 ✅ case 2: no empty space -> true
 
