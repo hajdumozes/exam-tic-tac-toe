@@ -43,4 +43,17 @@ class GameBoardTest {
         // then
         assertThat(output.size()).isEqualTo(expectedSize);
     }
+
+    @Test
+    void givenCellIsOccupiedByPlayerX_listEmptySpaces_shouldNotListIt() {
+        // given
+        gameBoard.getCells().get(0).setOccupier(Occupier.PLAYER_X);
+        int expectedSize = gameBoard.getCells().size() - 1;
+
+        // when
+        List<Cell> output = gameBoard.getEmptyCells();
+
+        // then
+        assertThat(output.size()).isEqualTo(expectedSize);
+    }
 }
