@@ -94,7 +94,7 @@ class GameOverDeciderTest {
         List<Cell> input = List.of(new Cell(0, 0), new Cell(1, 0), new Cell(2, 0));
 
         // when
-        boolean output = decider.isItHorizontalWin(input);
+        boolean output = decider.isItVerticalWin(input);
 
         // then
         assertThat(output).isTrue();
