@@ -7,6 +7,6 @@ import java.util.List;
 public class GameOverDecider {
 
     public boolean isItDraw(List<Cell> cells) {
-        return false;
+        return true;
     }
 }

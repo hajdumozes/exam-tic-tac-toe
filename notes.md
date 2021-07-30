@@ -82,7 +82,7 @@ scenario: draw
 
 case 1: there are empty spaces -> false
 
-case 1: no empty space -> true
+✅ case 2: no empty space -> true
 
 pomodoro 1:
 
