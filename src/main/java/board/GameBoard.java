@@ -5,6 +5,7 @@ import lombok.Data;
 import lombok.experimental.FieldDefaults;
 
 import java.util.List;
+import java.util.stream.Collectors;
 
 @Data
 @FieldDefaults(level = AccessLevel.PRIVATE, makeFinal = true)
@@ -34,6 +35,6 @@ public class GameBoard {
     }
 
     public List<Cell> getEmptyCells() {
-        return cells;
+        return cells.stream().filter(cell -> cell.getOccupier() == Occupier.NONE).collect(Collectors.toList());
     }
 }

@@ -14,7 +14,7 @@ scenario: board gives empty spaces
 
 case 2: O-s should not be part of it
 
-case 3: X-s shoud not be part of it
+✅ case 3: X-s should not be part of it
 
 ### Player:
 
