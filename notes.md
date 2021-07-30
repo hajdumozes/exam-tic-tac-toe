@@ -1,18 +1,12 @@
-##Components
+## Components
 
 ### Board:
 
-scenario: board printing
-✅ case 1: board print should return with:
+scenario: board printing ✅ case 1: board print should return with:
 
- | |
--+-+-
- | |
--+-+-
- | |
+| | -+-+- | | -+-+- | |
 
-scenario: board gives empty spaces
-case 1: empty spaces should be part of it
+scenario: board gives empty spaces case 1: empty spaces should be part of it
 
 case 2: O-s should not be part of it
 
@@ -26,9 +20,7 @@ case 1: player picks an empty space on board, their symbol should appear on it
 
 case 2: player picks a non-empty space on board, exception thrown
 
-
 ### Game manager
-
 
 scenario: player rounds
 
@@ -40,9 +32,7 @@ case 3: round switch should print the board after 2 second
 
 case 4: if game is over, there shouldn't be a round switch
 
-
-scenario: board state should trigger game over
-case 1: non of them are present, no game over
+scenario: board state should trigger game over case 1: non of them are present, no game over
 
 case 2: horizontal win, have a winner
 
@@ -64,8 +54,7 @@ case 4: any other, no win with vertical
 
 -> game over, have a winner
 
-scenario player won with horizontal line
-case 1: 1|1 & 2|1 & 3|1 is occupied by the same player
+scenario player won with horizontal line case 1: 1|1 & 2|1 & 3|1 is occupied by the same player
 
 case 2: 1|2 & 2|2 & 3|3 is occupied by the same player
 
@@ -75,18 +64,16 @@ case 4: any other, no win with horizontal
 
 -> game over, have a winner
 
-scenario player won with diagonal line
-case 1: 1|1 & 2|2 & 3|3 is occupied by the same player
+scenario player won with diagonal line case 1: 1|1 & 2|2 & 3|3 is occupied by the same player
 
 case 2: 1|3 & 2|2 & 3|1 is occupied by the same player
 
-case 4: any other, no win with diagonal
--> game over, have a winner
+case 4: any other, no win with diagonal -> game over, have a winner
 
-scenario: draw
-case 1: no empty space -> game over, no winner
+scenario: draw case 1: no empty space -> game over, no winner
 
 pomodoro 1:
-- make notes
-- create board class
-- have board print
+
+- ✅ make notes
+- ✅ create board class
+- ✅ have board print
