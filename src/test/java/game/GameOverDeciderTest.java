@@ -137,9 +137,21 @@ class GameOverDeciderTest {
     }
 
     @Test
-    void givenNoColumn_isItDiagonalWin_shouldReturnTrue() {
+    void givenLeftToRight_isItDiagonalWin_shouldReturnTrue() {
         // given
         List<Cell> input = List.of(new Cell(0, 0), new Cell(1, 1), new Cell(2, 2));
+
+        // when
+        boolean output = decider.isItDiagonalWin(input);
+
+        // then
+        assertThat(output).isTrue();
+    }
+
+    @Test
+    void givenRightToLeft_isItDiagonalWin_shouldReturnTrue() {
+        // given
+        List<Cell> input = List.of(new Cell(0, 2), new Cell(1, 1), new Cell(2, 0));
 
         // when
         boolean output = decider.isItDiagonalWin(input);
