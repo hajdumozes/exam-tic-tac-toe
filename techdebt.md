@@ -1,1 +1,3 @@
 - board print should be dynamic by cells
+- player pick should change occupier
+- win conditon should get occupier cells
