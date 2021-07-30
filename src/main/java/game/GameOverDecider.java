@@ -19,8 +19,8 @@ public class GameOverDecider {
 
     public boolean isItVerticalWin(List<Cell> cells) {
         List<Cell> firstColumn = List.of(new Cell(0, 0), new Cell(1, 0), new Cell(2, 0));
-        List<Cell> secondLine = List.of(new Cell(1, 0), new Cell(1, 1), new Cell(1, 2));
+        List<Cell> secondColumn = List.of(new Cell(0, 1), new Cell(1, 1), new Cell(2, 1));
         List<Cell> thirdLine = List.of(new Cell(2, 0), new Cell(2, 1), new Cell(2, 2));
-        return cells.containsAll(firstColumn) || cells.containsAll(secondLine) || cells.containsAll(thirdLine);
+        return cells.containsAll(firstColumn) || cells.containsAll(secondColumn) || cells.containsAll(thirdLine);
     }
 }
