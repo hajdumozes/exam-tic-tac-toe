@@ -20,9 +20,7 @@ scenario: board gives empty spaces
 
 scenario: player picks a move
 
-case 1: player picks an empty space on board, their symbol should appear on it
-
-case 2: player picks a non-empty space on board, exception thrown
+case 1: player pick a cell from input cells
 
 ### Game manager
 
