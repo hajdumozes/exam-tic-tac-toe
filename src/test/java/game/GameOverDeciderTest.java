@@ -7,7 +7,6 @@ import org.junit.jupiter.api.Test;
 import java.util.List;
 
 import static org.assertj.core.api.Assertions.assertThat;
-import static org.assertj.core.api.Assertions.in;
 
 class GameOverDeciderTest {
     GameOverDecider decider;
@@ -27,5 +26,17 @@ class GameOverDeciderTest {
 
         // then
         assertThat(output).isTrue();
+    }
+
+    @Test
+    void givenCellsAreLeft_isItDraw_shouldReturnFalse() {
+        // given
+        List<Cell> input = List.of(new Cell(1, 1));
+
+        // when
+        boolean output = decider.isItDraw(input);
+
+        // then
+        assertThat(output).isFalse();
     }
 }
