@@ -17,7 +17,14 @@ public class GameManager {
     Player currentPlayer = players.get(0);
     boolean isGameOver = false;
 
+    public void playGame() {
+        while (!isGameOver) {
+            playRound();
+        }
+    }
+
     public void playRound() {
+        currentPlayer.pickCell(gameBoard.getEmptyCells());
         if (currentPlayer.equals(players.get(0))) {
             currentPlayer = players.get(1);
         } else {
