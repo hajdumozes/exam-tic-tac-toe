@@ -7,6 +7,6 @@ import java.util.List;
 public class Player {
 
     public Cell pickCell(List<Cell> availableCells) {
-        return null;
+        return availableCells.get(0);
     }
 }
