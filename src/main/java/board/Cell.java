@@ -1,11 +1,15 @@
 package board;
 
-import lombok.AllArgsConstructor;
+import lombok.AccessLevel;
 import lombok.Data;
+import lombok.RequiredArgsConstructor;
+import lombok.experimental.FieldDefaults;
 
 @Data
-@AllArgsConstructor
+@RequiredArgsConstructor
+@FieldDefaults(level = AccessLevel.PRIVATE)
 public class Cell {
-    int row;
-    int column;
+    final int row;
+    final int column;
+    Occupier occupier = Occupier.NONE;
 }
