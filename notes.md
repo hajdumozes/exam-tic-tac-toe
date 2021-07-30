@@ -89,3 +89,11 @@ pomodoro 2:
 - ✅ game manager creates board
 - game maganer decides rounds
 - game should lasts until there is game over
+
+pomodoro 3:
+
+- specify win conditions and game overs
+    - horizontal
+    - vertical
+    - diagonal
+    - draw
