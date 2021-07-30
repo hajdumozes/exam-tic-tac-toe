@@ -10,7 +10,7 @@ scenario: board printing
 
 scenario: board gives empty spaces
 
-case 1: empty spaces should be part of it
+✅ case 1: empty spaces should be part of it
 
 case 2: O-s should not be part of it
 
