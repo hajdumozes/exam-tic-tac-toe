@@ -34,6 +34,6 @@ public class GameBoard {
     }
 
     public List<Cell> getEmptyCells() {
-        return null;
+        return cells;
     }
 }
