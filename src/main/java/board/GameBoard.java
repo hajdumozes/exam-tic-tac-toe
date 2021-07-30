@@ -1,10 +1,13 @@
 package board;
 
+import lombok.AccessLevel;
 import lombok.Data;
+import lombok.experimental.FieldDefaults;
 
 import java.util.List;
 
 @Data
+@FieldDefaults(level = AccessLevel.PRIVATE, makeFinal = true)
 public class GameBoard {
     List<Cell> cells;
 
@@ -28,5 +31,9 @@ public class GameBoard {
             " | |\n" +
             "-+-+-\n" +
             " | |");
+    }
+
+    public List<Cell> getEmptyCells() {
+        return null;
     }
 }

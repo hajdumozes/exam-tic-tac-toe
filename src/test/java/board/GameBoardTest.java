@@ -5,6 +5,7 @@ import org.junit.jupiter.api.Test;
 
 import java.io.ByteArrayOutputStream;
 import java.io.PrintStream;
+import java.util.List;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
@@ -29,5 +30,17 @@ class GameBoardTest {
             " | |\n" +
             "-+-+-\n" +
             " | |").isEqualTo(outputStreamCaptor.toString());
+    }
+
+    @Test
+    void givenAllCellsAreEmpty_listEmptySpaces_shouldListAllOfThem() {
+        // given
+        int expectedSize = gameBoard.getCells().size();
+
+        // when
+        List<Cell> output = gameBoard.getEmptyCells();
+
+        // then
+        assertThat(output.size()).isEqualTo(expectedSize);
     }
 }

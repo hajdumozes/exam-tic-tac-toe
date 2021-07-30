@@ -2,11 +2,15 @@
 
 ### Board:
 
-scenario: board printing ✅ case 1: board print should return with:
+scenario: board printing
+
+✅ case 1: board print should return with:
 
 | | -+-+- | | -+-+- | |
 
-scenario: board gives empty spaces case 1: empty spaces should be part of it
+scenario: board gives empty spaces
+
+case 1: empty spaces should be part of it
 
 case 2: O-s should not be part of it
 
@@ -79,6 +83,7 @@ pomodoro 1:
 - ✅ have board print
 
 pomodoro 2:
+
 - board gives back empty spaces
 - player can pick a space on board from empty ones
 - game manager creates board
