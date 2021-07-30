@@ -63,4 +63,16 @@ class GameOverDeciderTest {
         // then
         assertThat(output).isTrue();
     }
+
+    @Test
+    void givenThirdLine_isItHorizontalWin_shouldReturnTrue() {
+        // given
+        List<Cell> input = List.of(new Cell(2, 0), new Cell(2, 1), new Cell(2, 2));
+
+        // when
+        boolean output = decider.isItHorizontalWin(input);
+
+        // then
+        assertThat(output).isTrue();
+    }
 }
