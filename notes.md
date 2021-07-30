@@ -70,7 +70,7 @@ scenario player won with horizontal line case 1:
 
 ✅ case 3: 1|3 & 2|3 & 3|3 is occupied by the same player
 
-case 4: any other, no win with horizontal
+✅ case 4: any other, no win with horizontal
 
 -> game over, have a winner
 
