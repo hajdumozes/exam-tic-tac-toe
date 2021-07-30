@@ -76,11 +76,11 @@ scenario player won with horizontal line case 1:
 
 scenario player won with diagonal line 
 
-case 1: 1|1 & 2|2 & 3|3 is occupied by the same player
+✅ case 1: 1|1 & 2|2 & 3|3 is occupied by the same player
 
-case 2: 1|3 & 2|2 & 3|1 is occupied by the same player
+✅ case 2: 1|3 & 2|2 & 3|1 is occupied by the same player
 
-case 4: any other, no win with diagonal -> game over, have a winner
+✅ case 4: any other, no win with diagonal -> game over, have a winner
 
 scenario: draw
 
@@ -106,6 +106,6 @@ pomodoro 3:
 
 - specify win conditions and game overs
     - ✅ horizontal
-    - vertical
-    - diagonal
-    - draw
+    - ✅ vertical
+    - ✅ diagonal
+    - ✅ draw
