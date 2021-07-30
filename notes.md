@@ -77,3 +77,10 @@ pomodoro 1:
 - ✅ make notes
 - ✅ create board class
 - ✅ have board print
+
+pomodoro 2:
+- board gives back empty spaces
+- player can pick a space on board from empty ones
+- game manager creates board
+- game maganer decides rounds
+- game should lasts until there is game over
