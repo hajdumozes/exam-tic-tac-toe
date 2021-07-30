@@ -62,13 +62,13 @@ case 4: any other, no win with vertical
 
 -> game over, have a winner
 
-scenario player won with horizontal line case 1: 
+scenario player won with horizontal line case 1:
 
 ✅ 1|1 & 2|1 & 3|1 is occupied by the same player
 
 ✅ case 2: 1|2 & 2|2 & 3|3 is occupied by the same player
 
-case 3: 1|3 & 2|3 & 3|3 is occupied by the same player
+✅ case 3: 1|3 & 2|3 & 3|3 is occupied by the same player
 
 case 4: any other, no win with horizontal
 
@@ -80,7 +80,7 @@ case 2: 1|3 & 2|2 & 3|1 is occupied by the same player
 
 case 4: any other, no win with diagonal -> game over, have a winner
 
-scenario: draw 
+scenario: draw
 
 ✅ case 1: there are empty spaces -> false
 
