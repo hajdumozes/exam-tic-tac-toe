@@ -28,6 +28,6 @@ class BoardTest {
             "-+-+-\n" +
             " | |\n" +
             "-+-+-\n" +
-            " | |").isEqualTo(outputStreamCaptor.toString().trim());
+            " | |").isEqualTo(outputStreamCaptor.toString());
     }
 }

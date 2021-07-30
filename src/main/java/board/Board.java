@@ -23,5 +23,10 @@ public class Board {
     }
 
     public void print() {
+        System.out.print(" | |\n" +
+            "-+-+-\n" +
+            " | |\n" +
+            "-+-+-\n" +
+            " | |");
     }
 }
