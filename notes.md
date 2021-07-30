@@ -103,7 +103,7 @@ pomodoro 2:
 pomodoro 3:
 
 - specify win conditions and game overs
-    - horizontal
+    - ✅ horizontal
     - vertical
     - diagonal
     - draw
