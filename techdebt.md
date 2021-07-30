@@ -1,0 +1,1 @@
+- board print should be dynamic by cells
