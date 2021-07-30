@@ -30,7 +30,7 @@ scenario: player rounds
 
 ✅ case 1: starting player should be X
 
-case 2: play rounds should switch player
+✅ case 2: play rounds should switch player
 
 case 3: upon player picks a space, the rounds should be given to the other player
 

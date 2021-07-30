@@ -15,6 +15,10 @@ public class GameManager {
     boolean isGameOver = false;
 
     public void playRound() {
-
+        if (currentPlayer.equals(players.get(0))) {
+            currentPlayer = players.get(1);
+        } else {
+            currentPlayer = players.get(0);
+        }
     }
 }
