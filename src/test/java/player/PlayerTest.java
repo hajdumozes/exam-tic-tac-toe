@@ -1,7 +1,7 @@
 package player;
 
 import board.Cell;
-import board.Occupier;
+import board.PlayerSymbol;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
@@ -14,7 +14,7 @@ class PlayerTest {
 
     @BeforeEach
     void init() {
-        player = new Player(Occupier.PLAYER_X);
+        player = new Player(PlayerSymbol.PLAYER_X);
     }
 
     @Test

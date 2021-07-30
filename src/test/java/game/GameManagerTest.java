@@ -1,6 +1,6 @@
 package game;
 
-import board.Occupier;
+import board.PlayerSymbol;
 import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -17,24 +17,24 @@ class GameManagerTest {
     @Test
     void givenGameManagerCreation_getCurrentPlayer_startingPlayerShouldBePlayerX() {
         // given
-        Occupier expected = Occupier.PLAYER_X;
+        PlayerSymbol expected = PlayerSymbol.PLAYER_X;
 
         // when
         Player output = gameManager.getCurrentPlayer();
 
         // then
-        Assertions.assertThat(output.getOccupier()).isEqualTo(expected);
+        Assertions.assertThat(output.getPlayerSymbol()).isEqualTo(expected);
     }
 
     @Test
     void playRound_shouldChangePlayers() {
         // given
-        Occupier expected = Occupier.PLAYER_O;
+        PlayerSymbol expected = PlayerSymbol.PLAYER_O;
 
         // when
         gameManager.playRound();
 
         // then
-        Assertions.assertThat(gameManager.getCurrentPlayer().getOccupier()).isEqualTo(expected);
+        Assertions.assertThat(gameManager.getCurrentPlayer().getPlayerSymbol()).isEqualTo(expected);
     }
 }

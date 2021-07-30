@@ -47,7 +47,7 @@ class GameBoardTest {
     @Test
     void givenCellIsOccupiedByPlayerX_listEmptySpaces_shouldNotListIt() {
         // given
-        gameBoard.getCells().get(0).setOccupier(Occupier.PLAYER_X);
+        gameBoard.getCells().get(0).setPlayerSymbol(PlayerSymbol.PLAYER_X);
         int expectedSize = gameBoard.getCells().size() - 1;
 
         // when
@@ -60,7 +60,7 @@ class GameBoardTest {
     @Test
     void givenCellIsOccupiedByPlayerO_listEmptySpaces_shouldNotListIt() {
         // given
-        gameBoard.getCells().get(0).setOccupier(Occupier.PLAYER_O);
+        gameBoard.getCells().get(0).setPlayerSymbol(PlayerSymbol.PLAYER_O);
         int expectedSize = gameBoard.getCells().size() - 1;
 
         // when

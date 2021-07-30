@@ -1,5 +1,5 @@
 package board;
 
-public enum Occupier {
+public enum PlayerSymbol {
     PLAYER_X, PLAYER_O, NONE
 }

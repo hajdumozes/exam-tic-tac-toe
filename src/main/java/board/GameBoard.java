@@ -35,6 +35,6 @@ public class GameBoard {
     }
 
     public List<Cell> getEmptyCells() {
-        return cells.stream().filter(cell -> cell.getOccupier() == Occupier.NONE).collect(Collectors.toList());
+        return cells.stream().filter(cell -> cell.getPlayerSymbol() == PlayerSymbol.NONE).collect(Collectors.toList());
     }
 }

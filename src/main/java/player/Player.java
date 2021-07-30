@@ -1,7 +1,7 @@
 package player;
 
 import board.Cell;
-import board.Occupier;
+import board.PlayerSymbol;
 import lombok.AccessLevel;
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;
@@ -14,7 +14,7 @@ import java.util.Random;
 @RequiredArgsConstructor
 @FieldDefaults(level = AccessLevel.PRIVATE, makeFinal = true)
 public class Player {
-    Occupier occupier;
+    PlayerSymbol playerSymbol;
 
     public Cell pickCell(List<Cell> availableCells) {
         int randomIndex = new Random().nextInt(availableCells.size());

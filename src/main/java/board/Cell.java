@@ -11,5 +11,5 @@ import lombok.experimental.FieldDefaults;
 public class Cell {
     final int row;
     final int column;
-    Occupier occupier = Occupier.NONE;
+    PlayerSymbol playerSymbol = PlayerSymbol.NONE;
 }
