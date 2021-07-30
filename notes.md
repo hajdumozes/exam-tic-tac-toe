@@ -30,11 +30,13 @@ scenario: player rounds
 
 ✅ case 1: starting player should be X
 
-case 2: upon player picks a space, the rounds should be given to the other player
+case 2: play rounds should switch player
 
-case 3: round switch should print the board after 2 second
+case 3: upon player picks a space, the rounds should be given to the other player
 
-case 4: if game is over, there shouldn't be a round switch
+case 4: round switch should print the board after 2 second
+
+case 5: if game is over, there shouldn't be a round switch
 
 scenario: board state should trigger game over case 1: non of them are present, no game over
 

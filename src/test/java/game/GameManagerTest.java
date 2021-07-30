@@ -25,4 +25,16 @@ class GameManagerTest {
         // then
         Assertions.assertThat(output.getOccupier()).isEqualTo(expected);
     }
+
+    @Test
+    void playRound_shouldChangePlayers() {
+        // given
+        Occupier expected = Occupier.PLAYER_O;
+
+        // when
+        gameManager.playRound();
+
+        // then
+        Assertions.assertThat(gameManager.getCurrentPlayer().getOccupier()).isEqualTo(expected);
+    }
 }
